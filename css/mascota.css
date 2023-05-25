@@ -1,0 +1,281 @@
+:root{
+   --box-size:40em;
+   --ojos-offset-y:10;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+}
+
+#ToMoKoKa {
+   position: relative;
+   width: var(--box-size);
+   height: var(--box-size);
+   background: white;
+   margin: auto;
+}
+.svg {
+   position: absolute;
+   width: 0;
+   height: 0;
+}
+#cola {
+   position:absolute;
+   width:58%;
+   height:38%;
+   top:50%;
+   left: -10%;
+   border-radius: 48%;
+   background:hsl(20 50% 50%);
+   transform: rotatez(50deg);
+   background-color: #e5e5f7;
+   opacity: 0.8;
+   background-image:  linear-gradient(hsl(20 50% 40%) 2px, transparent 15px), linear-gradient(to right, hsl(20 50% 40%) 2px, hsl(20 50% 50%) 15px);
+   background-size: 30px 30px;
+   transform-origin: right;
+   animation: rotate-cola 5s infinite;
+   animation-direction: alternate;
+   animation-timing-function: ease-in-out;
+   box-shadow: inset 0px 0px 50px hsl(20 50% 20%);
+}
+
+@keyframes rotate-cola
+{
+   0%{
+      transform: rotatez(50deg);
+
+   }
+   100%{
+      transform: rotatez(70deg);
+   }
+}
+
+#cuerpo {
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translatex(-50%);
+   width: 45%;
+   height: 60%;
+   background-color: hsl(50 50% 50%);
+   -webkit-clip-path: url(#clip-cuerpo);
+   clip-path: url(#clip-cuerpo);
+   z-index: 2;
+}
+
+#gorra
+{
+   position: relative;
+   left: 0%;
+   top:-1%;
+   width: 100%;
+   height: 15%;
+   transform: rotatez(-6deg);
+   border: solid hsl(5 80% 40%);
+   background-color: hsl(5 68% 50%);
+}
+
+#vicera
+{
+   width: 20%;
+   height: 0;
+   border-bottom: solid hsl(5 80% 40%);
+   position: absolute;
+   top: 27%;
+   left: 50%;
+   transform: rotatez(-6deg);
+}
+
+.pie
+{
+   width:20%;
+   height:12%;
+   background: rgb(142, 66, 29);
+   border-radius: 10%;
+   z-index: 0;
+   border-radius: 100% 0 0 0;
+}
+
+.pie-l
+{
+   position: absolute;
+   top: 70%;
+   /* left: 28%; */
+   left: 52%;
+   transform: scalex(-1);
+}
+
+.pie-r
+{
+   position: absolute;
+   top: 70%;
+   /* left: 28%; */
+   left: 48%;
+   transform: translatex(-100%);
+}
+
+.ojo
+{
+   position: absolute;
+   background: white;
+   width:6%;
+   height: 6%;
+   z-index: 4;
+   border-radius: 50%;
+   border: solid hsl(0, 0%, 20%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@keyframes close-eyes
+{
+   0%{
+      height: 40%;
+   }
+   2%{
+      height: 1%;
+   }
+   4%{
+      height: 40%;
+   }
+}
+
+.ojo-l
+{
+   top: 32%;
+   left: 42%;
+   
+}
+
+.ojo-r
+{
+   top: 32%;
+   left: 52%;
+}
+
+.ojo::before
+{
+   transform: skewz(50deg);
+   content: '';
+   background: black;
+   display: inline-block;
+   height: 40%;
+   width: 40%;
+   border-radius: 50%;
+   animation: close-eyes 2s ease-in-out infinite alternate;
+}
+
+.lentes-middle
+{
+   width: 8%;
+   height: 5%;
+   position: absolute;
+   top: 33%;
+   left: 50%;
+   transform: translate(-50%);
+   border-radius: 50%;
+   z-index: 3;
+   border-top: solid hsl(0, 0%, 20%);
+}
+
+.lentes-patas
+{
+   width: 13%;
+   height: 8%;
+   position: absolute;
+   transform: translate(-50%);
+   border-radius: 50% 20%;
+   z-index: 3;
+   border-top: solid hsl(0, 0%, 20%);
+   transform: rotatez(10deg);
+}
+
+.lentes-patas-l
+{
+   top: 33%;
+   left: 32%;
+}
+
+.lentes-patas-r
+{
+   top: 33%;
+   left: 55%;
+   transform: rotatez(-10deg);
+   border-radius: 20% 50%;
+}
+
+#labios
+{
+   width: 40%;
+   height: 7%;
+   background: hsl(5 70% 40%);
+   position: absolute;
+   top: 42%;
+   left: 50%;
+   transform: translatex(-50%);
+   clip-path: 	url(#clip-labios);
+   z-index: 4;
+   border: solid hsl(5 70% 35%);
+}
+
+#diente-separador{
+   display: inline-block;
+   width: 0.5%;
+   height: 11.1%;
+   position: absolute;
+   top: 49%;
+   left: 49.8%;
+   z-index: 4;
+   border-radius: 40%;
+   background: hsl(50 0% 80%);
+}
+
+.diente
+{
+   position: absolute;
+   height: 15%;
+   width: 16%;
+   background:white;
+   z-index: 3;
+}
+
+.diente-r
+{
+   top:48%;
+   left: 49.5%;
+   transform: skew(8deg, 0deg);
+}
+
+.diente-l
+{
+   top:48%;
+   left: 50.5%;
+   transform: translate(-100%) skew(-8deg, 0deg);;
+}
+
+.mano
+{
+   width: 15%;
+   height: 15%;
+   clip-path: url(#clip-mano);
+   background: hsl(20 60% 30%);
+   position: absolute;
+}
+
+.mano-l
+{
+   top: 40%;
+   left: 22%;
+}
+
+.mano-r
+{
+   top: 40%;
+   left: 62%;
+   transform: scalex(-1);
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style_desktop.css" media="screen and (min-width: 720px)" />
+        <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+        <!-- Scrolling ^^^ -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/62ec947510.js" crossorigin="anonymous"></script>
+        <!-- Iconos ^^^ -->
+        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+        <!-- Parallax ^^^ -->
+        <link rel="stylesheet" href="css/flickity.css" />
+        <!-- Galería de imgs ^^^ -->
+
+        <title>Multimedios Studio</title>
+    </head>
+
+    <body>
+        <section id="content">
+            <header>
+                <nav id="navbar">
+                    <div class="container center d-flex">
+                        <!-- Logo -->
+                        <a class="navbar-brand logonav" href="#">
+                            <img id="imgNavLogo" src="assets/Multimedios logo2023.png" alt="Logo Multimedios" /><br />
+                            <p id="sublogo">Diseño Digital</p>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+
+            <section id="sitiosweb">
+                <video id="background-video-sitios" playsinline autoplay loop muted>
+                    <source src="assets/videobackground/Panal_Background--Shorter.mp4" type="video/mp4" />
+                </video>
+
+                <div class="">
+                    <div class="sitiosweb_grid">
+                        <h1 class="sitiosweb_titulo">SITIOS WEB</h1>
+                        <div class="sitiosweb_rasgos">
+                            <div class="rasgo">
+                                <div class="rasgo_title">Modernos</div>
+                                <div class="rasgo_desc">Conocemos las últimas tendencias.</div>
+                            </div>
+                            <div class="rasgo">
+                                <div class="rasgo_title">Personalizados</div>
+                                <div class="rasgo_desc">Hechos 100% a tu medida.</div>
+                            </div>
+                            <div class="rasgo">
+                                <div class="rasgo_title">Creativos</div>
+                                <div class="rasgo_desc">Destacamos en originalidad.</div>
+                            </div>
+                        </div>
+                        <svg class="hide">
+                            <clipPath id="clip_rombo" clipPathUnits="objectBoundingBox"><path d="M0.5,1 L0,0.75 L0,0.25 L0.5,0 L1,0.25 L1,0.75"></path></clipPath>
+                        </svg>
+                        <!--                         <video id="sitiosweb__video_colmena" playsinline autoplay loop muted>
+                            <source src="assets/videobackground/Panal_Background--Shorter.mp4" type="video/mp4" />
+                        </video> -->
+                    </div>
+                </div>
+
+                <div class="upperShadow2">
+                    <svg class="hide">
+                        <clipPath id="clip_arrowDown" clipPathUnits="objectBoundingBox"><path d="M1,0 L1,1 L0,1 L0,0 L0.5,1"></path></clipPath>
+                    </svg>
+                    <div class="clipped_arrow clipped_arrowDown"></div>
+                </div>
+            </section>
+
+            <!-- SIGUIENTE NIVEL -->
+            <section id="nextLevel">
+                <div class="container" mb="50px">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <h1 class="extralargetext">LLEVÁ TU</h1>
+                        </div>
+
+                        <div class="scroller col-12">
+                            <span>
+                                NEGOCIO<br />
+                                PROYECTO<br />
+                                EMPRESA<br />
+                            </span>
+                        </div>
+                        <div class="col-12">
+                            <h1 class="midiumlargetext z1">AL SIGUIENTE<!--br style="line-height: 60pt;">NIVEL--></h1>
+                        </div>
+                        <div class="col-12 position-relative" style="height: 210px">
+                            <img src="assets/nivel.png" id="img_nivel" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <svg class="hide">
+                    <clipPath id="clip_arrowUp" clipPathUnits="objectBoundingBox"><path d="M0.5,0 L1,1 L0,1"></path></clipPath>
+                </svg>
+                <div class="upperShadow1">
+                    <div class="clipped_arrow clipped_arrowUp"></div>
+                </div>
+            </section>
+
+            <!-- DISEÑO GRÁFICO -->
+            <section id="design">
+                <div class="separadorBlanco"></div>
+                <div id="design_Back" data-scroll></div>
+                <div id="design_gridLetters">
+                    <img id="imgDesignLetters" data-scroll class="" src="assets/Design_Letters_3.png" />
+                    <div id="design_desc" data-scroll>
+                        <p>En el mundo digital actual, la imagen lo es todo. Tenemos herramientas claves para crear una identidad profesional y atractiva para tu marca.</p>
+                        <p>Comunicá tus valores y objetivos de manera visual y efectiva, mostrando un estilo único y memorable que resuene con tus clientes.</p>
+                    </div>
+                </div>
+                <div id="design_Content">
+                    <div class="design_Subtitle" data-scroll>GENERAMOS IMPACTO VISUAL EFECTIVO</div>
+                    <div class="main-carousel">
+                        <div class="carousel-cell">
+                            <img src="assets/Design_Logos2.png" />
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/Design_Flyers.png" />
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/Design_Folletos.png" />
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/Design_Impresiones3D.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  PRODUCCIÓN AUDIOVISUAL -->
+            <section id="video">
+                <div class="audiovisuales container-fluid">
+                    <div class="row">
+                        <div class="audiovisuales__col_vid col-12 col-lg-6">
+                            <video id="video-audiovisual" playsinline autoplay loop muted>
+                                <source src="assets/videobackground/Audiovisualbackgroundvideo.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="audiovisuales__col_desc col-12 mt-4 col-lg-6">
+                            <img id="imgAudioVisuales" src="assets/AudioVisuales.svg" alt="" />
+                            <div class="audiovisuales__col_desc_content">
+                                <h3>Generación de contenido</h3>
+                                <h5></h5>
+
+                                <p style="margin-top: 28px">Transformá tus historias en realidad con nuestra producción audiovisual de alta calidad.</p>
+                                <p>Desde concepto hasta ejecución, brindamos soluciones únicas y profesionales para llevar tu proyecto a la vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/GreenHornet3.png" class="drone" alt="" />
+                </div>
+                <!-- <div class="m-5"></div> -->
+                <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="upperShadow1">
+                    <div style="top: 2px" class="clipped_arrow clipped_arrowUp"></div>
+                </div>
+            </section>
+
+            <!-- CONTACTO -->
+            <section id="contact_section">
+                <div class="d-grid container-sm">
+                    <h1>CONTACTO</h1>
+                    <h4 class="contact_subtitle">Comunicate con nosotros</h4>
+                </div>
+                <form method="post" action="https://formspree.io/f/mlekjbno">
+                    <!-- EMAIL -->
+                    <div class="mb-3">
+                        <label for="inputEmail1" class="form-label">E-Mail</label>
+                        <input type="email" class="form-control" name="inputEmail1" placeholder="ejemplo@mail.com" aria-describedby="emailHelp" />
+                    </div>
+                    <!-- CONSULTA -->
+                    <div class="mb-3">
+                        <label for="txtConsulta" class="form-label">Consulta</label>
+                        <textarea class="form-control" name="txtConsulta" required="true" placeholder="Contanos lo que necesitás." rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <div class="m-3 container text-center">
+                    <div id="whatsapp">
+                        <h4>o por teléfono/WhatsApp</h4>
+                        <a href="https://api.whatsapp.com/send?phone=+5492252513233&text=Hola,%20somos%20Multimedios,%20estamos a tu servicio :)" target="_blank">
+<!--                             <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="fab"
+                                data-icon="whatsapp"
+                                class="svg-inline--fa fa-whatsapp fa-w-14"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                                ></path>
+                            </svg> -->
+                            <!-- <img src="assets/wasap.svg" alt=""> -->
+                            <p>(2252) 51-3233</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <svg class="svg position-absolute">
+                <clipPath id="clip_arrow_sides" clipPathUnits="objectBoundingBox">
+                    <path d="M0,0 L1,0 L0.5,1"></path>
+                </clipPath>
+            </svg>
+            <div class="background_arrow_footer"></div>
+            <footer>
+                <div class="footer__grid">
+                    <h4 style="grid-column: 1/6">Hecho con <span class="corazon">♥</span> en La Costa</h4>
+                    <a style="grid-column: 2/3" href="https://facebook.com/multimedios.studio" target="_blank"><img src="assets/facebook.png" alt="" /></a>
+                    <a href="https://www.instagram.com/multimedios.lacosta/" target="_blank"><img src="assets/instagram.png" target="_blank" alt="" /></a>
+                    <a href="https://www.youtube.com/channel/UCDR5VNFCEG3FMbktwrleaIw" target="_blank"><img src="assets/youtube.png" alt="" /></a>
+                    <h4 style="grid-column: 1/6"><span class="copyright">©</span> Multimedios Studio 2023</h4>
+                </div>
+            </footer>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="flickity.pkgd.min.js"></script>
+        <script>
+            $(window).on("load", function () {
+                $(".main-carousel").flickity({
+                    wrapAround: true,
+                    freeScroll: true,
+                    autoPlay: 2500,
+                    selectedAttraction: 0.015,
+                    lazyLoad: 3,
+                });
+            });
+
+            //Inicializamos ScrollOut con propiedades
+            ScrollOut({ threshold: 0.6 });
+        </script>
+    </body>
+</html>
